@@ -1,0 +1,19 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Jenkins Job</title>
+</head>
+<body>
+    <h1>Create Jenkins Job</h1>
+    <form action="/create-job" method="post">
+        <label for="jobName">Job Name:</label><br>
+        <input type="text" id="jobName" name="jobName" required><br><br>
+        <label for="jobDescription">Job Description:</label><br>
+        <textarea id="jobDescription" name="jobDescription" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Create Job">
+    </form>
+</body>
+</html>
